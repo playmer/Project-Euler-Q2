@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Project Euler Q2' target in the 'Project Euler Q2' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
