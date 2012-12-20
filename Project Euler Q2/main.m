@@ -13,8 +13,28 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        long long sum = 0;
+        long num1=1, num2=2, temp;
+        
+        NSLog(@"%ld", num1);
+        NSLog(@"%ld", num2);
+        
+        while ((num1<4000000)&&(num2<4000000))
+        {
+            if((num2 % 2) == 0)
+            {
+                sum += num2;
+            }
+            
+            
+            temp = num2;
+            num2 = num1 + num2;
+            num1 = temp;
+            
+            NSLog(@"%ld", num2);
+            NSLog(@"Sum = %lld",sum);
+        }
+        NSLog(@"%lld", sum);
         
     }
     return 0;
